@@ -1,3 +1,23 @@
+# React JS Dasar & Lanjutan | SIB NF Academy
+
+Repository ini berisi kumpulan tugas-tugas dari course React JS Dasar & Lanjutan SIB NF Academy.
+
+## Identitas
+- Nama: Firenze Higa Putra
+- Kampus: Sekolah Tinggi Teknologi Terpadu Nurul Fikri
+- NIM: 0110223014
+- ID NFA: FWD03008
+
+## Struktur Repo
+- Setiap tugas akan disimpan sesuai pertemuan.
+
+---
+
+> Dibuat untuk memenuhi tugas course React JS Dasar & Lanjutan SIB NF Academy.
+
+
+---
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
