@@ -16,12 +16,12 @@ Repository ini berisi kumpulan tugas-tugas dari course React JS Dasar & Lanjutan
 
 ## Struktur Repo
 - Setiap tugas akan disimpan sesuai pertemuan.
-- Tugas pertemuan 1: 
+ **Tugas pertemuan 1:**
  - [Rapihkan halaman Home (Isi/ubah konten seperti teks dan gambar)].
  - Lengkapi halaman Team dan Contact menggunakan template Bootstrap (Isi konten disesuaikan dengan kreativitas masing-masing).
  - Screenshot tampilan halaman Home, Team, dan Contact lalu jadikan laporan dalam format pdf, cantumkan juga link github nya.
 
-- Tugas pertemuan 2: 
+ **Tugas pertemuan 2:**
  - Tambahkan routing untuk halaman Team dan Contact menggunakan react router.
  - Rapikan routing sesuai dengan kategori elemennya, silahkan buka dokumentasi react-router sebagai panduan: https://reactrouter.com/start/declarative/routing 
  - Menambahkan styling pada navigasi akan mendapatkan nilai tambahan.
