@@ -16,6 +16,7 @@ Repository ini berisi kumpulan tugas-tugas dari course React JS Dasar & Lanjutan
 
 ## Struktur Repo
 - Setiap tugas akan disimpan sesuai pertemuan.
+  
  **Tugas pertemuan 1:**
  - [Rapihkan halaman Home (Isi/ubah konten seperti teks dan gambar)].
  - Lengkapi halaman Team dan Contact menggunakan template Bootstrap (Isi konten disesuaikan dengan kreativitas masing-masing).
