@@ -8,8 +8,18 @@ Repository ini berisi kumpulan tugas-tugas dari course React JS Dasar & Lanjutan
 - NIM: 0110223014
 - ID NFA: FWD03008
 
+## Daftar Pertemuan
+
+- **Pertemuan 1**: 25 September 2025
+- **Pertemuan 2**: 26 September 2025
+
+
 ## Struktur Repo
 - Setiap tugas akan disimpan sesuai pertemuan.
+ **Tugas pertemuan 1:**
+ - [Rapihkan halaman Home (Isi/ubah konten seperti teks dan gambar)].
+ - Lengkapi halaman Team dan Contact menggunakan template Bootstrap (Isi konten disesuaikan dengan kreativitas masing-masing).
+ - Screenshot tampilan halaman Home, Team, dan Contact lalu jadikan laporan dalam format pdf, cantumkan juga link github nya.
 
 ---
 
