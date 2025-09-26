@@ -42,3 +42,58 @@
   width: 100%;
   object-fit: cover;
 }
+
+.blueSky {
+  background: linear-gradient(135deg, #0d6efd 0%, #5bc0de 50%, #8be9ff 100%);
+  color: #fff;
+}
+
+.light-primary {
+  background-color: #cfe2ff;
+  color: #084298;
+}
+
+/* Active nav button style used by Header */
+.nav-active-btn {
+  background-color: #0d6efd;
+  /* bootstrap primary */
+  color: #fff !important;
+  padding: 0.35rem 0.9rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(13, 110, 253, 0.18);
+}
+
+.nav-active-btn:focus,
+.nav-active-btn:hover {
+  background-color: #0b5ed7;
+  color: #fff !important;
+}
+
+/* Make nav links keep a consistent pill shape and smooth transitions */
+.navbar-nav .nav-link {
+  padding: 0.35rem 0.9rem;
+  /* same as active to avoid layout jump */
+  border-radius: 0.5rem;
+  transition: background-color 160ms ease, color 160ms ease, box-shadow 160ms ease, transform 160ms ease, opacity 160ms ease;
+  opacity: 0.95;
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+/* Keep the active button fully opaque and slightly lifted */
+.nav-active-btn {
+  opacity: 1 !important;
+  transform: translateY(0);
+}
+
+/* Prevent the collapse container from clipping shadows during route changes
+   (allows link box-shadows to remain visible). Using visible for .collapse.show
+   keeps the collapse animation intact in most cases while avoiding clipped shadows.
+*/
+.navbar .collapse,
+.navbar .collapsing {
+  overflow: visible !important;
+}

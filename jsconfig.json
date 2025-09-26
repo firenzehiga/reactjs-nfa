@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@/books/*": ["./src/assets/books/*"],
+      "@/shared/*": ["./src/components/shared/*"],
         "@/*": ["./src/*"]
     }
   }
