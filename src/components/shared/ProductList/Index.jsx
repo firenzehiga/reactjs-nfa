@@ -1,5 +1,40 @@
-import { products } from "@/utils/image.js";
+import { books } from "@/utils/book.js";
+import { useState } from "react";
+import toast from "react-hot-toast";
+
 export default function ProductList() {
+	const [bookList, setBookList] = useState([...books]);
+	const handleSubmit = () => {
+		const seed = Date.now(); // seed gambar berbeda
+		const now = new Date();
+		const formattedDate = now.toLocaleDateString("id-ID", {
+			day: "numeric",
+			month: "long",
+			year: "numeric",
+		});
+		const newBook = {
+			id: bookList.length + 1,
+			title: "Buku ke " + (bookList.length + 1),
+			author: "NF Academy",
+			year: formattedDate,
+			description: "Buku baru yang menarik.",
+			image: `https://picsum.photos/seed/${seed}/200/300`,
+		};
+		setBookList((prevList) => [...prevList, newBook]);
+		toast.dismiss();
+		toast.success("Berhasil menambahkan buku", {
+			duration: 2000,
+			style: {
+				border: "1px solid #87CEEB",
+				padding: "16px",
+				color: "#0B6EA8",
+			},
+			iconTheme: {
+				primary: "#87CEEB",
+				secondary: "#E0F7FF",
+			},
+		});
+	};
 	return (
 		<>
 			<section id="books" className="container">
@@ -25,37 +60,34 @@ export default function ProductList() {
 				<div id="book-list" className="container ">
 					<div className="container">
 						<div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-							{products.map((p) => (
+							{bookList.map((p) => (
 								<div className="col" key={p.id}>
 									<div className="card shadow-sm">
 										<img
-											src={p.img}
+											src={p.image}
 											alt={p.title}
 											className="card-img-top img-fluid books"
 										/>
 										<div className="card-body">
+											<h5 className="card-title fw-bold">{p.title}</h5>
 											<p className="card-text text-body-secondary">
 												{p.description}
 											</p>
 											<div className="d-flex justify-content-between align-items-center">
-												<div className="btn-group">
-													<button
-														type="button"
-														className="btn btn-sm btn-outline-secondary">
-														View
-													</button>
-													<button
-														type="button"
-														className="btn btn-sm btn-outline-secondary">
-														Preview
-													</button>
-												</div>
-												<small className="text-body-secondary">{p.date}</small>
+												<small className="fw-bold">by {p.author}</small>
+												<small className="text-body-secondary">{p.year}</small>
 											</div>
 										</div>
 									</div>
 								</div>
 							))}
+						</div>
+						<div className="col text-center mt-4">
+							<p>
+								<button onClick={handleSubmit} className="btn btn-primary my-2">
+									Tambah Buku
+								</button>
+							</p>
 						</div>
 					</div>
 				</div>

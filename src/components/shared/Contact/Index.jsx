@@ -1,3 +1,4 @@
+import toast from "react-hot-toast";
 export default function Contact() {
 	return (
 		<>
@@ -46,7 +47,15 @@ export default function Contact() {
 											<form
 												onSubmit={(e) => {
 													e.preventDefault();
-													alert("Thank you — pesan Anda telah dikirim (demo).");
+													toast.dismiss();
+
+													const toastId = toast.loading("Mengirim pesan...");
+													setTimeout(() => {
+														toast.success(
+															"Terima kasih — pesan Anda telah dikirim (demo).",
+															{ id: toastId }
+														);
+													}, 1500);
 												}}>
 												<div className="row g-3">
 													<div className="col-md-6">

@@ -8,15 +8,15 @@ export default function Header() {
 	return (
 		<>
 			<header className="sticky-top bg-white shadow-sm">
-				<nav className="navbar navbar-expand-md bg-white" role="navigation">
+				<nav className="navbar navbar-expand-md blueSky" role="navigation">
 					<div className="container">
 						<Link
 							to="/"
 							className="navbar-brand d-flex align-items-center text-decoration-none">
 							<i
 								className="fa-solid fa-book fa-2x"
-								style={{ color: "#74C0FC" }}></i>
-							<span className="ms-2 fs-4 fw-bold">bookstore</span>
+								style={{ color: "#FFF" }}></i>
+							<span className="ms-2 fs-4 fw-bold text-white">bookstore</span>
 						</Link>
 
 						<button

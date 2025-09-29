@@ -1,4 +1,4 @@
-import { atomic } from "@/utils/image.js";
+import { atomic } from "@/utils/book.js";
 
 export default function Hero(props) {
 	return (

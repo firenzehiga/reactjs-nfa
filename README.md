@@ -12,6 +12,7 @@ Repository ini berisi kumpulan tugas-tugas dari course React JS Dasar & Lanjutan
 
 - **Pertemuan 1**: 25 September 2025
 - **Pertemuan 2**: 26 September 2025
+- **Pertemuan 3**: 29 September 2025
 
 
 ## Struktur Repo
@@ -26,6 +27,16 @@ Repository ini berisi kumpulan tugas-tugas dari course React JS Dasar & Lanjutan
  - Tambahkan routing untuk halaman Team dan Contact menggunakan react router.
  - Rapikan routing sesuai dengan kategori elemennya, silahkan buka dokumentasi react-router sebagai panduan: https://reactrouter.com/start/declarative/routing 
  - Menambahkan styling pada navigasi akan mendapatkan nilai tambahan.
+
+ **Tugas pertemuan 3:**
+ - Buat file books.js.
+ - Buka project booksales, lalu buat folder Utils di dalam folder src
+ - Buat file books.js
+ - Isi file books.js seperti contoh di bawah ini:
+ - Buat data buku minimal 9 dengan data yang berbeda-beda
+ - Tampilkan data tersebut di halaman home dan halaman Book
+ - Gunakan metode map untuk menampilkan data
+ - Menambahkan button untuk menambahkan data menggunakan hooks 
 
 ---
 

@@ -8,8 +8,8 @@ export default function MainLayout() {
 			<Header />
 			<div className="container">
 				<Outlet />
-				<Footer />
 			</div>
+			<Footer />
 		</>
 	);
 }
